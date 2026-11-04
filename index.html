@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bản Đồ Né Deadline - Nhóm 8</title>
+    <meta name="description" content="Website nhóm: thế giới 3D 6 vùng, mỗi vùng một thành viên.">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top">Bản Đồ Né Deadline</a>
+      <nav aria-label="Điều hướng chính">
+        <a href="#the-gioi">Thế giới</a>
+        <button id="panicBtn" type="button" aria-pressed="false">Chế độ hoảng loạn</button>
+      </nav>
+    </header>
+    <main>
+      <section id="the-gioi" aria-label="Thế giới 3D">
+        <div class="world" id="world">
+          <p id="status" aria-live="polite">Bấm để đi ·  WASD: đi · Nút chặng:bay tới</p>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">Nhóm 8 · Bản đồ né Deadline</footer>
+    <dialog id="dlg" aria-labelledby="dName">
+      <button class="close" id="dClose" type="button" aria-label="Đóng">✕</button>
+      <div class="d-ava" id="dAva"></div>
+      <h3 id="dName"></h3>
+      <p class="d-zone" id="dZone"></p>
+      <p id="dSum"></p>
+      <a class="btn" id="dLink" target="_blank" rel="noopener">Ghé thăm góc của mình</a>
+    </dialog>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
